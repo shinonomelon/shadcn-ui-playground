@@ -1,11 +1,9 @@
-"use client";
-
-import { Button } from "@/components/ui/button";
+import { Header } from "../components/header";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Button onClick={() => alert("clicked!!")}>Click me</Button>
+    <main className="flex min-h-screen flex-col items-center justify-between dark:bg-black">
+      <Header />
     </main>
   );
 }
