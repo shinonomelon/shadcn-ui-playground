@@ -1,6 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { ModeToggle } from "./mode-toggle";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export function Header() {
   return (
@@ -11,8 +14,26 @@ export function Header() {
         </h1>
       </div>
       <div>
-        <nav>
+        <nav className="flex items-center space-x-4">
           <ModeToggle />
+          <Link
+            href="/auth/signup"
+            className={cn(
+              buttonVariants({ variant: "outline" })
+              // "text-white bg-black dark:bg-white dark:text-black"
+            )}
+          >
+            Sign Up
+          </Link>
+          <Link
+            href="/auth/login"
+            className={cn(
+              buttonVariants({ variant: "secondary" })
+              // "text-white bg-black dark:bg-white dark:text-black"
+            )}
+          >
+            Login
+          </Link>
         </nav>
       </div>
     </header>

@@ -1,14 +1,8 @@
-import { API_URL, IMAGE_URL } from "@/lib/constant";
+import { API_URL } from "@/lib/constant";
 import Image from "next/image";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-
-type Post = {
-  userId: number;
-  id: number;
-  title: string;
-  body: string;
-};
+import { Post } from "@/lib/types";
 
 async function getPosts(): Promise<Post[]> {
   const res = await fetch(`${API_URL}/posts?_limit=10`);
