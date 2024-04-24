@@ -1,5 +1,46 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always"
-  }
+  "cSpell.words": [
+    "Autosize",
+    "callees",
+    "calt",
+    "clsx",
+    "cmdk",
+    "cropperjs",
+    "gitmoji",
+    "hookform",
+    "ianvs",
+    "kumabiko",
+    "lucide",
+    "nextjs",
+    "pnpx",
+    "preinstall",
+    "rlig",
+    "shadcn",
+    "signup",
+    "SUPABASE",
+    "svgr",
+    "tabler",
+    "tailwindcss",
+    "tanstack",
+    "tiptap",
+    "tsuboi",
+    "uuidv",
+    "vaul",
+    "workdir",
+    "zact"
+  ],
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "editor.formatOnSave": true,
+  "[javascript][typescript][typescriptreact][json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "eslint.run": "onSave",
+  "eslint.validate": [
+  "javascript",
+  "javascriptreact",
+  "typescript",
+  "typescriptreact"
+],
 }
