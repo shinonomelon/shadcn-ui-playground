@@ -19,9 +19,6 @@ export async function PostList() {
   const posts = await getPosts();
   return (
     <div>
-      <h1 className="text-xl font-bold text-gray-900 dark:text-gray-100">
-        Blog List
-      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-6 py-12">
         {posts.map((post) => (
           <section
